@@ -1,7 +1,3 @@
-Based on the content of your `etl_project.html` file, here is a suggested `README.md` for your project:
-
----
-
 # Xetra ETL Pipeline Project
 
 This project implements an ETL (Extract, Transform, Load) pipeline for processing financial trading data from the Deutsche Börse Xetra dataset. The processed data is stored in AWS S3 in Parquet format for further analysis and reporting.
