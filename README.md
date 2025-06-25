@@ -2,7 +2,7 @@
 
 This project implements an ETL (Extract, Transform, Load) pipeline for processing financial trading data from the Deutsche Börse Xetra dataset. The processed data is stored in AWS S3 in Parquet format for further analysis and reporting.
 
-## 📌 Project Overview
+##  Project Overview
 
 The pipeline performs the following tasks:
 
@@ -14,7 +14,7 @@ The pipeline performs the following tasks:
   * Cleans and rounds numerical data.
 * **Load**: Writes the transformed data as a Parquet file into a target S3 bucket (`xetra-1234`).
 
-## 🧰 Tools & Technologies
+##  Tools & Technologies
 
 * **Python 3**
 * **Pandas**: for data manipulation
@@ -30,7 +30,7 @@ The pipeline performs the following tasks:
   xetra_daily_report_YYYYMMDD_HHMMSS.parquet
   ```
 
-## 🧮 Key Data Transformations
+##  Key Data Transformations
 
 * Extraction of opening and closing prices using grouping and sorting.
 * Calculation of:
@@ -41,19 +41,19 @@ The pipeline performs the following tasks:
   * `daily_traded_volumn`
 * Data cleansing using rounding and dropping NaN values.
 
-## 🚀 How to Run
+##  How to Run
 
 1. Ensure AWS credentials are configured with access to the appropriate buckets.
 2. Set the `arg_date` parameter in the script to the desired start date.
 3. Run the notebook to execute the ETL flow.
 4. The result will be available in the target S3 bucket in Parquet format.
 
-## 🔐 Notes
+##  Notes
 
 * Requires permissions to read from `deutsche-boerse-xetra-pds` and write to `xetra-1234`.
 * Execution assumes a local or cloud environment configured with `boto3` access.
 
-## 🧑‍💻 Author
+##  Author
 
 * Kim Xiang
 
