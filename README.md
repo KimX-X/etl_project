@@ -21,7 +21,7 @@ The pipeline performs the following tasks:
 * **Boto3**: for interacting with AWS S3
 * **Jupyter Notebook**: for development and documentation
 
-## 📁 Input & Output
+##  Input & Output
 
 * **Input**: CSV files from the `deutsche-boerse-xetra-pds` S3 bucket.
 * **Output**: A single Parquet file uploaded to the `xetra-1234` S3 bucket, named using the pattern:
